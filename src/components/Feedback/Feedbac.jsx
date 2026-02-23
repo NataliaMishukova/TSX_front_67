@@ -19,13 +19,13 @@ function Feedback() {
     //   return like + 1;
     // });
 
-        setLike((prevValue) => {
+    setLike((prevValue) => {
       return prevValue + 1;
     });
-     setLike((prevValue) => {
+    setLike((prevValue) => {
       return prevValue + 1;
     });
-     setLike((prevValue) => {
+    setLike((prevValue) => {
       return prevValue + 1;
     });
   };

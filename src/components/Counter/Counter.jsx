@@ -33,7 +33,7 @@ function Counter() {
   // console.log(state[0])
   // console.log(state[1])
 
-  ///!!!! ИЗМЕНЕНИЕ count МОЖЕТ БЫТЬ ТОЛЬКО С ИСПОЛЬЗОВАНИЕМ ФУНКЦИИ setCount
+  /// ИЗМЕНЕНИЕ count МОЖЕТ БЫТЬ ТОЛЬКО С ИСПОЛЬЗОВАНИЕМ ФУНКЦИИ setCount
   // С использованием деструктуризации
   // По умолчанию count === undefined, если мы неичего не передадим в качестве аршумента в useState
   const [count, setCount] = useState(0);
