@@ -2,7 +2,7 @@ import Button from "components/Button/Button";
 
 import "./styles.css";
 import { type CounterProps } from "./types";
-
+//подготовили наш компонент для того чтобы передавать в него пропсы
 function Counter({ count, onMinus, onPlus }: CounterProps) {
   return (
     <div className="counter_wrapper">

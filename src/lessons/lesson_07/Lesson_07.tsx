@@ -1,10 +1,10 @@
 import { useState } from "react";
-
+//быо относительный путь, а стал абсолютный
 import Button from "components/Button/Button";
 import Input from "components/Input/Input";
 import Counter from "components/Counter/Counter";
-
-import "./styles.css";
+import { PageWrapper } from "./styles";
+// import "./styles.css";
 import { WEATHER_CODES } from "./types";
 
 //  Есть 2 основных способа вызова перерендера(обновления) компонента:
@@ -99,7 +99,7 @@ function Lesson_07() {
       articul: 123542525135135,
     },
   };
-
+//Контроль родительским элементом дочернего. Нам нужно перенести дочерний компонент в родительский, такк ак пропсы передают элемент от родительского к дочернему. Передаем пропсы из State count функциям  onMinus и onPlus
   const [count, setCount] = useState<number>(0);
 
   const onMinus = (): void => {
@@ -120,7 +120,7 @@ function Lesson_07() {
   };
 
   return (
-    <div className="lesson_07_page_wrapper">
+    <PageWrapper>
       <Button name="Sipmple Button" onClick={sendCounterResult} />
       <Input
         id="simple-input"
@@ -129,7 +129,7 @@ function Lesson_07() {
         label="Simple Input"
       />
       <Counter count={count} onMinus={onMinus} onPlus={onPlus} />
-    </div>
+   </PageWrapper>
   );
 }
 
