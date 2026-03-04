@@ -1,3 +1,5 @@
+import { type ChangeEvent } from "react";
+
 //в вайле ts прописываем пропс
 export interface InputProps {
   id: string;
@@ -7,4 +9,6 @@ export interface InputProps {
   label: string;
   error?:undefined|string;
   disabled?:boolean; // "?" ставим в пропс, чтобы сделать их необязательными и система не ругалась. Затем добавляем необходимые пропс в наш объект (в скобочки)
+  value?:string;
+  onChange?:(event:ChangeEvent<HTMLInputElement>)=>void;
 }

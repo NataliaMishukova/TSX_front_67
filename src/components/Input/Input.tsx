@@ -9,6 +9,7 @@ function Input({
   label,
   disabled = false,
   error = undefined, //ставим значения, которые хотим, чтобы были по умолчанию
+  value,onChange
 }: InputProps) {
   return (
     <InputWrapper>
@@ -20,6 +21,8 @@ function Input({
         placeholder={placeholder}
         disabled={disabled} //слева-атрибут элемента, а справа в скобках-пропс(значение)
         $error={error} //по умолчани. атрибута error у инпута не существует, поэтому он горит красным, для этого ставим $
+        value={value}
+        onChange={onChange}
       />
          {/* Условный рендеринг
       - если слева от && стоит false, то элемент справа от && на странице не показывается(т.е скрывается)

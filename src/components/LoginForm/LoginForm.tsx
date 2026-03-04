@@ -1,32 +1,42 @@
+// 1 шаг: импортируем useState из библиотеки react
+import { type ChangeEvent, useState } from "react";
 import Button from "components/Button/Button";
 import Input from "components/Input/Input";
 
 import { LoginFormContainer, InputsContainer, Title } from "./styles";
 
 function LoginForm() {
-  // const CLICK_ME_BUTTON = document.querySelector("#clickme_button");
+  //На примере маленького импута
+  // ШАГ2: Создаем стейт для нашего инпута, чтобы его контрлировать и иметь доступ к введенным пользователем данным
+  // const [inputValue, setInputValue] = useState<string>("");
 
-  const login = () => {
-    console.log("login");
+  // ШАГ 3:  создаем функцию, которая будет выполнять на событие onChange
+  // const onChangeInputValue = (event: ChangeEvent<HTMLInputElement>) => {
+  //   setInputValue(event.target.value);
+  // };
+  // console.log(inputValue)
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");//после добавления пропс создаем 2 стейта
+
+  const changeEmail = (event: ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
   };
 
-  // CLICK_ME_BUTTON.addEventListener("click", login);
+  const changePassword = (event: ChangeEvent<HTMLInputElement>) => {
+    setPassword(event.target.value);
+  };
 
-  // C передачей аргументов
-  // const login = (message) => {
-  //   console.log("Button login works!!!");
-  //   alert(message);
-  // };
+  console.log(email, password);
 
-  // Без передачи аргументов
-  // const login = (event) => {
-  //   event.preventDefault();
-  //   console.log("Button login works!!!");
-  // };
+  const login = (event: any) => {//отправляем данные на сервер
+    event.preventDefault();//функ-я кот-я предотвращает перезагрузку страницы
+    console.log("Email", email);//строка для вывода данных в консоль
+    console.log("Password", password);
+  };
 
   return (
     <LoginFormContainer onSubmit={login}>
-      <Title>Login form</Title>
+      <Title>Login form/</Title>
       <InputsContainer>
         <Input
           id="email-id"
@@ -34,8 +44,8 @@ function LoginForm() {
           type="email"
           placeholder="Enter your email"
           label="Email"
-          // value={email}
-          // onChange={changeEmail}
+          value={email}
+          onChange={changeEmail}
         />
         <Input
           id="password-id"
@@ -43,10 +53,11 @@ function LoginForm() {
           type="password"
           placeholder="Enter your password"
           label="Password"
-          // value={password}
-          // onChange={changePassword}
+          value={password}
+          onChange={changePassword}
         />
-        {/* <input
+        {/* 1. Контроль элемента форм осущ-ся за счет 2 атрибутов: value  и onchange
+        <input
           placeholder="Enter something"
           onChange={onChangeInputValue}
           value={inputValue}
