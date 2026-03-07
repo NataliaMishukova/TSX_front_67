@@ -7,7 +7,7 @@ function Lesson_09() {//задача урока: cltkfnm input конролир�
     <PageWrapper>
       Lesson_09/Контроль элемента форм
         {/* <LoginForm /> */}
-        <Card>
+        <Card>Lesson_09/Контроль элемента форм
         <ContainerFacts>
           <Text></Text>
         </ContainerFacts>
