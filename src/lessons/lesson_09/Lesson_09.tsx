@@ -2,7 +2,7 @@
 import Button from "components/Button/Button";
 import { PageWrapper, ContainerFacts, Card, Text } from "./styles";
 
-function Lesson_09() {//задача урока: cltkfnm input конролируемыми
+function Lesson_09() {//задача урока:  сделать input конролируемыми
   return (
     <PageWrapper>
       Lesson_09/Контроль элемента форм
