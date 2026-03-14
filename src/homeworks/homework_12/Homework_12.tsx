@@ -1,4 +1,4 @@
-import ContuctUs from "components/ContactUs/ContactUs";
+import ContuctUs from "components/ContactUsForm/ContactUs";
 
 import { PageWrapper } from "./styles";
 
