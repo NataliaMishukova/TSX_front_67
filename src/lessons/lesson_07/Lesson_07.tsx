@@ -99,7 +99,7 @@ function Lesson_07() {
       articul: 123542525135135,
     },
   };
-//Контроль родительским элементом дочернего. Нам нужно перенести дочерний компонент в родительский, такк ак пропсы передают элемент от родительского к дочернему. Передаем пропсы из State count функциям  onMinus и onPlus
+  //Контроль родительским элементом дочернего. Нам нужно перенести дочерний компонент в родительский, такк ак пропсы передают элемент от родительского к дочернему. Передаем пропсы из State count функциям  onMinus и onPlus
   const [count, setCount] = useState<number>(0);
 
   const onMinus = (): void => {
@@ -129,7 +129,7 @@ function Lesson_07() {
         label="Simple Input"
       />
       <Counter count={count} onMinus={onMinus} onPlus={onPlus} />
-   </PageWrapper>
+    </PageWrapper>
   );
 }
 

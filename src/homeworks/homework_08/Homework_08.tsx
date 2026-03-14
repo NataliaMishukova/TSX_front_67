@@ -8,17 +8,23 @@ import { PageWrapper, Paragraph, FormElementContainer } from "./styles";
 // Создайте компонент Homework_08 и импортируйте в него Input и Button. Отобразите все варианты Button и Input, в зависимости от того какие значения вы прокините в их пропсы(у Button - это disabled и isRed, у Input - это disabled и error)
 
 function Homework_08() {
-    const works = () => {
-    console.log("Button works");//выводит сообщение в консоль
+  const works = () => {
+    console.log("Button works"); //выводит сообщение в консоль
   };
   return (
     <PageWrapper>
       <Paragraph>HW8</Paragraph>
-      <FormElementContainer><Button name="Simple button" onClick={works} /></FormElementContainer>
-      <FormElementContainer><Button isRed name="Delete button" onClick={works} /></FormElementContainer>
-      <FormElementContainer><Button disabled name="Disabled button" onClick={works} /></FormElementContainer>
       <FormElementContainer>
-         <Input
+        <Button name="Simple button" onClick={works} />
+      </FormElementContainer>
+      <FormElementContainer>
+        <Button isRed name="Delete button" onClick={works} />
+      </FormElementContainer>
+      <FormElementContainer>
+        <Button disabled name="Disabled button" onClick={works} />
+      </FormElementContainer>
+      <FormElementContainer>
+        <Input
           id="simple_input"
           label="Simple Input"
           name="simple"
@@ -31,7 +37,7 @@ function Homework_08() {
           label="Error Input"
           name="error"
           placeholder="Enter message"
-          error="This field is required"//строка не undefined, по заданию должна гореть красным
+          error="This field is required" //строка не undefined, по заданию должна гореть красным
         />
       </FormElementContainer>
       <FormElementContainer>

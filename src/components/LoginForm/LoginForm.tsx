@@ -16,7 +16,7 @@ function LoginForm() {
   // };
   // console.log(inputValue)
   const [email, setEmail] = useState<string>("");
-  const [password, setPassword] = useState<string>("");//после добавления пропс создаем 2 стейта
+  const [password, setPassword] = useState<string>(""); //после добавления пропс создаем 2 стейта
 
   const changeEmail = (event: ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
@@ -28,9 +28,10 @@ function LoginForm() {
 
   console.log(email, password);
 
-  const login = (event: any) => {//отправляем данные на сервер
-    event.preventDefault();//функ-я кот-я предотвращает перезагрузку страницы
-    console.log("Email", email);//строка для вывода данных в консоль
+  const login = (event: any) => {
+    //отправляем данные на сервер
+    event.preventDefault(); //функ-я кот-я предотвращает перезагрузку страницы
+    console.log("Email", email); //строка для вывода данных в консоль
     console.log("Password", password);
   };
 
@@ -57,11 +58,7 @@ function LoginForm() {
           onChange={changePassword}
         />
         {/* 1. Контроль элемента форм осущ-ся за счет 2 атрибутов: value  и onchange
-        <input
-          placeholder="Enter something"
-          onChange={onChangeInputValue}
-          value={inputValue}
-        /> */}
+        <input*/}
       </InputsContainer>
       <Button name="Login" type="submit" />
     </LoginFormContainer>
