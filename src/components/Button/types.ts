@@ -5,4 +5,5 @@ export interface ButtonProps {
   onClick?: () => void  //типизируем функцию
   isRed?:boolean;
   disabled?:boolean;
+  color?:string;
 }

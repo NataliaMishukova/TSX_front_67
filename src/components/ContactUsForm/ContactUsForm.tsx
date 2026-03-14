@@ -74,7 +74,7 @@ function ContactUsForm() {
           error={formik.errors[CONTACT_US_VALUES.EMAIL]}
         />
       </InputsContainer>
-      <Button name="Send request" type="submit" />
+      <Button name="Send request" type="submit" color="white"/>
     </LoginFormContainer>
   );
 }

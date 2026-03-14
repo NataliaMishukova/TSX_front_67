@@ -7,7 +7,10 @@ import Home from "pages/EmployeeApp/Home/Home";
 import About from "pages/EmployeeApp/About/About";
 import LogIn from "pages/EmployeeApp/LogIn/LogIn";
 import ContactUs from "pages/EmployeeApp/ContactUs/ContactUs";
-
+import Clients from "pages/EmployeeApp/Clients/Clients";
+import Client2 from "pages/EmployeeApp/Clients/AllClients/Client2";
+import Client1 from "pages/EmployeeApp/Clients/AllClients/Client1";
+import Client3 from "pages/EmployeeApp/Clients/AllClients/Client3";
 // Lessons
 // import Lesson_06 from "lessons/lesson_06/Lesson_06";
 // import Lesson_07 from "./lessons/lesson_07/Lesson_07";
@@ -28,12 +31,16 @@ function App() {
     <BrowserRouter>
       <GlobalStyles />
       <Layout>
-      <Routes>
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="*" element="Page Not Found" />
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/clients/client1" element={<Client1 />} />
+          <Route path="/clients/client2" element={<Client2 />} />
+          <Route path="/clients/client3" element={<Client3 />} />
         </Routes>
       </Layout>
       {/* LESSONS */}
