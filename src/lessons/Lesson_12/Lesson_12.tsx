@@ -1,4 +1,4 @@
-import LoginForm from "components/LoginForm/LoginForm";
+import LoginForm from "components/LoginForm2/LoginForm";
 
 import { PageWrapper } from "./styles";
 
