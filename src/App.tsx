@@ -1,3 +1,6 @@
+// Импортируем BrowserRouter, Route, Routes для настройки маршрутизации
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
 import GlobalStyles from "styles/GlobalStyles"; // Lessons
 
 // import Lesson_06 from "lessons/lesson_06/Lesson_06"
