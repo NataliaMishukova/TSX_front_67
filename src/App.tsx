@@ -1,16 +1,17 @@
 // Импортируем BrowserRouter, Route, Routes для настройки маршрутизации
+import Lesson_14 from "lessons/Lesson_14/Lesson_14";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Layout from "components/Layout/Layout";
+// import Layout from "components/Layout/Layout";
 import GlobalStyles from "styles/GlobalStyles";
-import Home from "pages/EmployeeApp/Home/Home";
-import About from "pages/EmployeeApp/About/About";
-import LogIn from "pages/EmployeeApp/LogIn/LogIn";
-import ContactUs from "pages/EmployeeApp/ContactUs/ContactUs";
-import Clients from "pages/EmployeeApp/Clients/Clients";
-import Client2 from "pages/EmployeeApp/Clients/AllClients/Client2";
-import Client1 from "pages/EmployeeApp/Clients/AllClients/Client1";
-import Client3 from "pages/EmployeeApp/Clients/AllClients/Client3";
+// import Home from "pages/EmployeeApp/Home/Home";
+// import About from "pages/EmployeeApp/About/About";
+// import LogIn from "pages/EmployeeApp/LogIn/LogIn";
+// import ContactUs from "pages/EmployeeApp/ContactUs/ContactUs";
+// import Clients from "pages/EmployeeApp/Clients/Clients";
+// import Client2 from "pages/EmployeeApp/Clients/AllClients/Client2";
+// import Client1 from "pages/EmployeeApp/Clients/AllClients/Client1";
+// import Client3 from "pages/EmployeeApp/Clients/AllClients/Client3";
 // Lessons
 // import Lesson_06 from "lessons/lesson_06/Lesson_06";
 // import Lesson_07 from "./lessons/lesson_07/Lesson_07";
@@ -30,7 +31,7 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      <Layout>
+      {/* <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -42,7 +43,7 @@ function App() {
           <Route path="/clients/client2" element={<Client2 />} />
           <Route path="/clients/client3" element={<Client3 />} />
         </Routes>
-      </Layout>
+      </Layout> */}
       {/* LESSONS */}
       {/* <Lesson_06 /> */}
       {/* <Lesson_07 /> */}
@@ -50,6 +51,7 @@ function App() {
       {/* <Lesson_09 /> */}
       {/* <Lesson_10 /> */}
       {/* <Lesson_12 /> */}
+      <Lesson_14 />
       {/* HOMEWORKS */}
       {/* <Homework_06 /> */}
       {/* <Homework_07 /> */}
@@ -57,6 +59,7 @@ function App() {
       {/* <Homework_09 /> */}
       {/* <Homework_10 /> */}
       {/* <Homework_12 /> */}
+
     </BrowserRouter>
   );
 }
