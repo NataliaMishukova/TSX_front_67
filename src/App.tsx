@@ -1,9 +1,13 @@
 // Импортируем BrowserRouter, Route, Routes для настройки маршрутизации
-import Lesson_14 from "lessons/Lesson_14/Lesson_14";
+
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 // import Layout from "components/Layout/Layout";
 import GlobalStyles from "styles/GlobalStyles";
+import Layout from "lessons/Lesson_15/components/Layout/Layout";
+import Employee from "lessons/Lesson_15/components/CreateEmployee/Employee";
+import Employees from "lessons/Lesson_15/components/Employees/Employees";
 // import Home from "pages/EmployeeApp/Home/Home";
 // import About from "pages/EmployeeApp/About/About";
 // import LogIn from "pages/EmployeeApp/LogIn/LogIn";
@@ -19,6 +23,7 @@ import GlobalStyles from "styles/GlobalStyles";
 // import Lesson_09 from "lessons/lesson_09/Lesson_09";
 // import Lesson_10 from "lessons/lesson_10/Lesson_10";
 // import Lesson_12 from "lessons/Lesson_12/Lesson_12";
+// import Lesson_14 from "lessons/Lesson_14/Lesson_14";
 // Homeworks
 // import Homework_06 from "./homeworks/homework_06/Homework_06";
 // import Homework_07 from "./homeworks/homework_07/Homework_07";
@@ -26,24 +31,27 @@ import GlobalStyles from "styles/GlobalStyles";
 // import Homework_09 from "homeworks/homework_09/Homework_09";
 // import Homework_10 from "homeworks/homework_10/homework_10";
 // import Homework_12 from "homeworks/homework_12/Homework_12";
+// import Homework_14 from "homeworks/homework_14/Homework_14";
 
 function App() {
   return (
     <BrowserRouter>
       <GlobalStyles />
-      {/* <Layout>
+      <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<LogIn />} />
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="*" element="Page Not Found" />
           <Route path="/clients" element={<Clients />} />
-          <Route path="/clients/client1" element={<Client1 />} />
+              <Route path="/clients/client1" element={<Client1 />} />
           <Route path="/clients/client2" element={<Client2 />} />
-          <Route path="/clients/client3" element={<Client3 />} />
+          <Route path="/clients/client3" element={<Client3 />} /> */}
+          <Route path="/employee" element={<Employee />} />
+          <Route path="/employees" element={<Employees />} />
         </Routes>
-      </Layout> */}
+      </Layout>
       {/* LESSONS */}
       {/* <Lesson_06 /> */}
       {/* <Lesson_07 /> */}
@@ -51,7 +59,7 @@ function App() {
       {/* <Lesson_09 /> */}
       {/* <Lesson_10 /> */}
       {/* <Lesson_12 /> */}
-      <Lesson_14 />
+      {/* <Lesson_14 /> */}
       {/* HOMEWORKS */}
       {/* <Homework_06 /> */}
       {/* <Homework_07 /> */}
@@ -59,9 +67,10 @@ function App() {
       {/* <Homework_09 /> */}
       {/* <Homework_10 /> */}
       {/* <Homework_12 /> */}
-
-    </BrowserRouter>
+      {/* <Homework_14 /> */}
+          </BrowserRouter>
   );
 }
 
 export default App;
+        
