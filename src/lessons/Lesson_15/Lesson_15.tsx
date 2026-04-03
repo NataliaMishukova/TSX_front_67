@@ -1,6 +1,6 @@
-function Lesson_15() {
-  return (
-    <div>
+// function Lesson_15() {
+//   return (
+//     <div>
       {/* 1. Приложение должно иметь 2 страницы: "Create Employee" и "Employees". 2.
       Создайте Layout, который будет включать Header и Main часть 3. В Header
       должны быть 2 ссылки "Create Employee", "Employees" 4. При клике на ссылку
@@ -27,8 +27,8 @@ function Lesson_15() {
       карточка заменяет старую 8. Подсказка: для работы с логикой используйте
       библиотеки Formik, yup и контекст 9. [Ссылка на
       дизайн](https://www.figma.com/design/8EMBPuuAZED8blbDY3waeg/Employee?node-id=0-1&t=8lJghbdSV26CNQAE-0) */}
-    </div>
+    {/* </div>
   );
-}
+} */}
 
-export default Lesson_15;
+{/* export default Lesson_15; */}
